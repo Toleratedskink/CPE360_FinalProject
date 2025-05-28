@@ -1,0 +1,728 @@
+
+Airplane_Controls.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000074  00800100  00000432  000004c6  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000432  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000002  00800174  00800174  0000053a  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  0000053a  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  0000056c  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000148  00000000  00000000  000005ac  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   0000162e  00000000  00000000  000006f4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000d85  00000000  00000000  00001d22  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000a20  00000000  00000000  00002aa7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000278  00000000  00000000  000034c8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    000006b5  00000000  00000000  00003740  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    0000060d  00000000  00000000  00003df5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 000000f8  00000000  00000000  00004402  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__ctors_end>
+   4:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+   8:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+   c:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  10:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  14:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  18:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  1c:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  20:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  24:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  28:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  2c:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  30:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  34:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  38:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  3c:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  40:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  44:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  48:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  4c:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  50:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  54:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  58:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  5c:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  60:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  64:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  68:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  6c:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  70:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  74:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  78:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  7c:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  80:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  84:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  88:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  8c:	0c 94 9a 01 	jmp	0x334	; 0x334 <__vector_35>
+  90:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  94:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  98:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  9c:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  a0:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  a4:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  a8:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  ac:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  b0:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+
+000000b4 <__ctors_end>:
+  b4:	11 24       	eor	r1, r1
+  b6:	1f be       	out	0x3f, r1	; 63
+  b8:	cf ef       	ldi	r28, 0xFF	; 255
+  ba:	d8 e0       	ldi	r29, 0x08	; 8
+  bc:	de bf       	out	0x3e, r29	; 62
+  be:	cd bf       	out	0x3d, r28	; 61
+
+000000c0 <__do_copy_data>:
+  c0:	11 e0       	ldi	r17, 0x01	; 1
+  c2:	a0 e0       	ldi	r26, 0x00	; 0
+  c4:	b1 e0       	ldi	r27, 0x01	; 1
+  c6:	e2 e3       	ldi	r30, 0x32	; 50
+  c8:	f4 e0       	ldi	r31, 0x04	; 4
+  ca:	02 c0       	rjmp	.+4      	; 0xd0 <__do_copy_data+0x10>
+  cc:	05 90       	lpm	r0, Z+
+  ce:	0d 92       	st	X+, r0
+  d0:	a4 37       	cpi	r26, 0x74	; 116
+  d2:	b1 07       	cpc	r27, r17
+  d4:	d9 f7       	brne	.-10     	; 0xcc <__do_copy_data+0xc>
+
+000000d6 <__do_clear_bss>:
+  d6:	21 e0       	ldi	r18, 0x01	; 1
+  d8:	a4 e7       	ldi	r26, 0x74	; 116
+  da:	b1 e0       	ldi	r27, 0x01	; 1
+  dc:	01 c0       	rjmp	.+2      	; 0xe0 <.do_clear_bss_start>
+
+000000de <.do_clear_bss_loop>:
+  de:	1d 92       	st	X+, r1
+
+000000e0 <.do_clear_bss_start>:
+  e0:	a6 37       	cpi	r26, 0x76	; 118
+  e2:	b2 07       	cpc	r27, r18
+  e4:	e1 f7       	brne	.-8      	; 0xde <.do_clear_bss_loop>
+  e6:	0e 94 db 01 	call	0x3b6	; 0x3b6 <main>
+  ea:	0c 94 17 02 	jmp	0x42e	; 0x42e <_exit>
+
+000000ee <__bad_interrupt>:
+  ee:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000000f2 <motor_stop>:
+	OCR0A = speed; // Set speed via PWM
+}
+
+// Stop motor (no output to driver)
+void motor_stop() {
+	MOTOR_PORT &= ~((1 << MOTOR_PIN1) | (1 << MOTOR_PIN2));
+  f2:	8b b1       	in	r24, 0x0b	; 11
+  f4:	83 7f       	andi	r24, 0xF3	; 243
+  f6:	8b b9       	out	0x0b, r24	; 11
+	OCR0A = 0; // Stop PWM
+  f8:	17 bc       	out	0x27, r1	; 39
+  fa:	08 95       	ret
+
+000000fc <motor_init>:
+#include "dc_motor.h"
+
+// Initialize motor driver pins and PWM
+void motor_init() {
+	MOTOR_DDR |= (1 << MOTOR_PIN1) | (1 << MOTOR_PIN2); // Direction control pins
+  fc:	8a b1       	in	r24, 0x0a	; 10
+  fe:	8c 60       	ori	r24, 0x0C	; 12
+ 100:	8a b9       	out	0x0a, r24	; 10
+	PWM_DDR |= (1 << PWM_PIN); // PWM output pin
+ 102:	8a b1       	in	r24, 0x0a	; 10
+ 104:	80 64       	ori	r24, 0x40	; 64
+ 106:	8a b9       	out	0x0a, r24	; 10
+
+	// Timer0 Fast PWM on OC0A (PD6)
+	TCCR0A = (1 << COM0A1) | (1 << WGM01) | (1 << WGM00);
+ 108:	83 e8       	ldi	r24, 0x83	; 131
+ 10a:	84 bd       	out	0x24, r24	; 36
+	TCCR0B = (1 << CS01); // Prescaler = 8
+ 10c:	82 e0       	ldi	r24, 0x02	; 2
+ 10e:	85 bd       	out	0x25, r24	; 37
+
+	OCR0A = 0; // Start with 0% duty cycle
+ 110:	17 bc       	out	0x27, r1	; 39
+	motor_stop(); // Ensure stopped
+ 112:	0e 94 79 00 	call	0xf2	; 0xf2 <motor_stop>
+ 116:	08 95       	ret
+
+00000118 <LCD_PrintLine>:
+	LCD_SetCursor(0,0);
+	LCD_String("Hello, CPE360!");
+	LCD_SetCursor(1,0);
+	LCD_String("I2C LCD Ready");
+}
+void LCD_PrintLine(uint8_t row, const char*text){
+ 118:	cf 93       	push	r28
+ 11a:	df 93       	push	r29
+ 11c:	eb 01       	movw	r28, r22
+	LCD_SetCursor(row,0);
+ 11e:	60 e0       	ldi	r22, 0x00	; 0
+ 120:	0e 94 22 01 	call	0x244	; 0x244 <LCD_SetCursor>
+	LCD_String(text);
+ 124:	ce 01       	movw	r24, r28
+ 126:	0e 94 15 01 	call	0x22a	; 0x22a <LCD_String>
+}
+ 12a:	df 91       	pop	r29
+ 12c:	cf 91       	pop	r28
+ 12e:	08 95       	ret
+
+00000130 <LCD_ClearRow>:
+void LCD_ClearRow(uint8_t row){
+	LCD_SetCursor(row,0);
+ 130:	60 e0       	ldi	r22, 0x00	; 0
+ 132:	0e 94 22 01 	call	0x244	; 0x244 <LCD_SetCursor>
+	LCD_String("                ");
+ 136:	8d e1       	ldi	r24, 0x1D	; 29
+ 138:	91 e0       	ldi	r25, 0x01	; 1
+ 13a:	0e 94 15 01 	call	0x22a	; 0x22a <LCD_String>
+ 13e:	08 95       	ret
+
+00000140 <I2C_Init>:
+#include <stdio.h>
+#include <util/twi.h>
+#include <util/delay.h>
+
+void I2C_Init(void){
+	TWSR0=0x00;
+ 140:	10 92 b9 00 	sts	0x00B9, r1	; 0x8000b9 <__TEXT_REGION_LENGTH__+0x7f80b9>
+	TWBR0=72;
+ 144:	88 e4       	ldi	r24, 0x48	; 72
+ 146:	80 93 b8 00 	sts	0x00B8, r24	; 0x8000b8 <__TEXT_REGION_LENGTH__+0x7f80b8>
+ 14a:	08 95       	ret
+
+0000014c <I2C_Start>:
+}
+void I2C_Start(uint8_t address) {
+	TWCR0 = (1 << TWINT) | (1 << TWSTA) | (1 << TWEN);
+ 14c:	94 ea       	ldi	r25, 0xA4	; 164
+ 14e:	90 93 bc 00 	sts	0x00BC, r25	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7f80bc>
+	while (!(TWCR0 & (1 << TWINT)));
+ 152:	90 91 bc 00 	lds	r25, 0x00BC	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7f80bc>
+ 156:	99 23       	and	r25, r25
+ 158:	e4 f7       	brge	.-8      	; 0x152 <I2C_Start+0x6>
+
+	if ((TWSR0 & 0xF8) != TW_START)
+ 15a:	90 91 b9 00 	lds	r25, 0x00B9	; 0x8000b9 <__TEXT_REGION_LENGTH__+0x7f80b9>
+ 15e:	98 7f       	andi	r25, 0xF8	; 248
+ 160:	98 30       	cpi	r25, 0x08	; 8
+ 162:	59 f4       	brne	.+22     	; 0x17a <I2C_Start+0x2e>
+	return 0;
+
+	TWDR0 = address;
+ 164:	80 93 bb 00 	sts	0x00BB, r24	; 0x8000bb <__TEXT_REGION_LENGTH__+0x7f80bb>
+	TWCR0 = (1 << TWINT) | (1 << TWEN);
+ 168:	84 e8       	ldi	r24, 0x84	; 132
+ 16a:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7f80bc>
+	while (!(TWCR0 & (1 << TWINT)));
+ 16e:	80 91 bc 00 	lds	r24, 0x00BC	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7f80bc>
+ 172:	88 23       	and	r24, r24
+ 174:	e4 f7       	brge	.-8      	; 0x16e <I2C_Start+0x22>
+
+	return (TWSR0 & 0xF8) == TW_MT_SLA_ACK;
+ 176:	80 91 b9 00 	lds	r24, 0x00B9	; 0x8000b9 <__TEXT_REGION_LENGTH__+0x7f80b9>
+ 17a:	08 95       	ret
+
+0000017c <I2C_Write>:
+}
+
+uint8_t I2C_Write(uint8_t data) {
+	TWDR0 = data;
+ 17c:	80 93 bb 00 	sts	0x00BB, r24	; 0x8000bb <__TEXT_REGION_LENGTH__+0x7f80bb>
+	TWCR0 = (1 << TWINT) | (1 << TWEN);
+ 180:	84 e8       	ldi	r24, 0x84	; 132
+ 182:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7f80bc>
+	while (!(TWCR0 & (1 << TWINT)));
+ 186:	80 91 bc 00 	lds	r24, 0x00BC	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7f80bc>
+ 18a:	88 23       	and	r24, r24
+ 18c:	e4 f7       	brge	.-8      	; 0x186 <I2C_Write+0xa>
+
+	return (TWSR0 & 0xF8) == TW_MT_DATA_ACK;
+ 18e:	90 91 b9 00 	lds	r25, 0x00B9	; 0x8000b9 <__TEXT_REGION_LENGTH__+0x7f80b9>
+ 192:	98 7f       	andi	r25, 0xF8	; 248
+ 194:	81 e0       	ldi	r24, 0x01	; 1
+ 196:	98 32       	cpi	r25, 0x28	; 40
+ 198:	09 f0       	breq	.+2      	; 0x19c <I2C_Write+0x20>
+ 19a:	80 e0       	ldi	r24, 0x00	; 0
+}
+ 19c:	08 95       	ret
+
+0000019e <I2C_Stop>:
+
+void I2C_Stop(void) {
+	TWCR0 = (1 << TWINT) | (1 << TWSTO) | (1 << TWEN);
+ 19e:	84 e9       	ldi	r24, 0x94	; 148
+ 1a0:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7f80bc>
+	while (TWCR0 & (1 << TWSTO));
+ 1a4:	80 91 bc 00 	lds	r24, 0x00BC	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7f80bc>
+ 1a8:	84 fd       	sbrc	r24, 4
+ 1aa:	fc cf       	rjmp	.-8      	; 0x1a4 <I2C_Stop+0x6>
+}
+ 1ac:	08 95       	ret
+
+000001ae <LCD_SendByte>:
+
+// -------- LCD Low-Level I2C --------
+void LCD_SendByte(uint8_t data, uint8_t mode) {
+ 1ae:	0f 93       	push	r16
+ 1b0:	1f 93       	push	r17
+ 1b2:	cf 93       	push	r28
+ 1b4:	df 93       	push	r29
+ 1b6:	06 2f       	mov	r16, r22
+	uint8_t high = data & 0xF0;
+ 1b8:	18 2f       	mov	r17, r24
+ 1ba:	10 7f       	andi	r17, 0xF0	; 240
+	uint8_t low = (data << 4) & 0xF0;
+ 1bc:	90 e1       	ldi	r25, 0x10	; 16
+ 1be:	89 9f       	mul	r24, r25
+ 1c0:	e0 01       	movw	r28, r0
+ 1c2:	11 24       	eor	r1, r1
+
+	I2C_Start(LCD_ADDRESS << 1);
+ 1c4:	8e e4       	ldi	r24, 0x4E	; 78
+ 1c6:	0e 94 a6 00 	call	0x14c	; 0x14c <I2C_Start>
+
+	I2C_Write(high | LCD_BACKLIGHT | mode | LCD_ENABLE);
+ 1ca:	d1 2f       	mov	r29, r17
+ 1cc:	d0 2b       	or	r29, r16
+ 1ce:	8d 2f       	mov	r24, r29
+ 1d0:	8c 60       	ori	r24, 0x0C	; 12
+ 1d2:	0e 94 be 00 	call	0x17c	; 0x17c <I2C_Write>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 1d6:	85 e0       	ldi	r24, 0x05	; 5
+ 1d8:	8a 95       	dec	r24
+ 1da:	f1 f7       	brne	.-4      	; 0x1d8 <LCD_SendByte+0x2a>
+ 1dc:	00 00       	nop
+	_delay_us(1);
+	I2C_Write(high | LCD_BACKLIGHT | mode);
+ 1de:	8d 2f       	mov	r24, r29
+ 1e0:	88 60       	ori	r24, 0x08	; 8
+ 1e2:	0e 94 be 00 	call	0x17c	; 0x17c <I2C_Write>
+ 1e6:	87 ec       	ldi	r24, 0xC7	; 199
+ 1e8:	90 e0       	ldi	r25, 0x00	; 0
+ 1ea:	01 97       	sbiw	r24, 0x01	; 1
+ 1ec:	f1 f7       	brne	.-4      	; 0x1ea <LCD_SendByte+0x3c>
+ 1ee:	00 c0       	rjmp	.+0      	; 0x1f0 <LCD_SendByte+0x42>
+ 1f0:	00 00       	nop
+	_delay_us(50);
+
+	I2C_Write(low | LCD_BACKLIGHT | mode | LCD_ENABLE);
+ 1f2:	c0 2b       	or	r28, r16
+ 1f4:	8c 2f       	mov	r24, r28
+ 1f6:	8c 60       	ori	r24, 0x0C	; 12
+ 1f8:	0e 94 be 00 	call	0x17c	; 0x17c <I2C_Write>
+ 1fc:	95 e0       	ldi	r25, 0x05	; 5
+ 1fe:	9a 95       	dec	r25
+ 200:	f1 f7       	brne	.-4      	; 0x1fe <LCD_SendByte+0x50>
+ 202:	00 00       	nop
+	_delay_us(1);
+	I2C_Write(low | LCD_BACKLIGHT | mode);
+ 204:	8c 2f       	mov	r24, r28
+ 206:	88 60       	ori	r24, 0x08	; 8
+ 208:	0e 94 be 00 	call	0x17c	; 0x17c <I2C_Write>
+
+	I2C_Stop();
+ 20c:	0e 94 cf 00 	call	0x19e	; 0x19e <I2C_Stop>
+}
+ 210:	df 91       	pop	r29
+ 212:	cf 91       	pop	r28
+ 214:	1f 91       	pop	r17
+ 216:	0f 91       	pop	r16
+ 218:	08 95       	ret
+
+0000021a <LCD_Cmd>:
+
+void LCD_Cmd(uint8_t cmd) {
+	LCD_SendByte(cmd, LCD_COMMAND);
+ 21a:	60 e0       	ldi	r22, 0x00	; 0
+ 21c:	0e 94 d7 00 	call	0x1ae	; 0x1ae <LCD_SendByte>
+ 220:	08 95       	ret
+
+00000222 <LCD_Char>:
+}
+
+void LCD_Char(char chr) {
+	LCD_SendByte(chr, LCD_DATA);
+ 222:	61 e0       	ldi	r22, 0x01	; 1
+ 224:	0e 94 d7 00 	call	0x1ae	; 0x1ae <LCD_SendByte>
+ 228:	08 95       	ret
+
+0000022a <LCD_String>:
+}
+
+void LCD_String(const char *str) {
+ 22a:	cf 93       	push	r28
+ 22c:	df 93       	push	r29
+ 22e:	ec 01       	movw	r28, r24
+	while (*str) {
+ 230:	03 c0       	rjmp	.+6      	; 0x238 <LCD_String+0xe>
+		LCD_Char(*str++);
+ 232:	21 96       	adiw	r28, 0x01	; 1
+ 234:	0e 94 11 01 	call	0x222	; 0x222 <LCD_Char>
+void LCD_Char(char chr) {
+	LCD_SendByte(chr, LCD_DATA);
+}
+
+void LCD_String(const char *str) {
+	while (*str) {
+ 238:	88 81       	ld	r24, Y
+ 23a:	81 11       	cpse	r24, r1
+ 23c:	fa cf       	rjmp	.-12     	; 0x232 <LCD_String+0x8>
+		LCD_Char(*str++);
+	}
+}
+ 23e:	df 91       	pop	r29
+ 240:	cf 91       	pop	r28
+ 242:	08 95       	ret
+
+00000244 <LCD_SetCursor>:
+
+void LCD_SetCursor(uint8_t row, uint8_t col) {
+	uint8_t addr;
+
+	if (row == 0) {
+ 244:	81 11       	cpse	r24, r1
+		addr = 0x00;  // Start of row 0
+		} else {
+		addr = 0x40;  // Start of row 1
+ 246:	80 e4       	ldi	r24, 0x40	; 64
+	}
+
+	LCD_Cmd(0x80 + addr + col);  // 0x80 = Set DDRAM address
+ 248:	86 0f       	add	r24, r22
+ 24a:	80 58       	subi	r24, 0x80	; 128
+ 24c:	0e 94 0d 01 	call	0x21a	; 0x21a <LCD_Cmd>
+ 250:	08 95       	ret
+
+00000252 <LCD_Init>:
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 252:	2f ef       	ldi	r18, 0xFF	; 255
+ 254:	80 e7       	ldi	r24, 0x70	; 112
+ 256:	92 e0       	ldi	r25, 0x02	; 2
+ 258:	21 50       	subi	r18, 0x01	; 1
+ 25a:	80 40       	sbci	r24, 0x00	; 0
+ 25c:	90 40       	sbci	r25, 0x00	; 0
+ 25e:	e1 f7       	brne	.-8      	; 0x258 <LCD_Init+0x6>
+ 260:	00 c0       	rjmp	.+0      	; 0x262 <LCD_Init+0x10>
+ 262:	00 00       	nop
+}
+
+void LCD_Init(void) {
+	_delay_ms(50); //Initial setup time
+	LCD_Cmd(0x33); //0011 sent as 2 nibbles
+ 264:	83 e3       	ldi	r24, 0x33	; 51
+ 266:	0e 94 0d 01 	call	0x21a	; 0x21a <LCD_Cmd>
+	LCD_Cmd(0x32); //0011, 0010 sent as 2 nibbles
+ 26a:	82 e3       	ldi	r24, 0x32	; 50
+ 26c:	0e 94 0d 01 	call	0x21a	; 0x21a <LCD_Cmd>
+	LCD_Cmd(0x28); // 0010, 1000 4-bit, 2-line
+ 270:	88 e2       	ldi	r24, 0x28	; 40
+ 272:	0e 94 0d 01 	call	0x21a	; 0x21a <LCD_Cmd>
+	LCD_Cmd(0x0C); // Display ON- Look for Table 6
+ 276:	8c e0       	ldi	r24, 0x0C	; 12
+ 278:	0e 94 0d 01 	call	0x21a	; 0x21a <LCD_Cmd>
+	LCD_Cmd(0x06); // 0000, 0110 Auto increment
+ 27c:	86 e0       	ldi	r24, 0x06	; 6
+ 27e:	0e 94 0d 01 	call	0x21a	; 0x21a <LCD_Cmd>
+	LCD_Cmd(0x01); // Clear display
+ 282:	81 e0       	ldi	r24, 0x01	; 1
+ 284:	0e 94 0d 01 	call	0x21a	; 0x21a <LCD_Cmd>
+ 288:	8f e3       	ldi	r24, 0x3F	; 63
+ 28a:	9f e1       	ldi	r25, 0x1F	; 31
+ 28c:	01 97       	sbiw	r24, 0x01	; 1
+ 28e:	f1 f7       	brne	.-4      	; 0x28c <LCD_Init+0x3a>
+ 290:	00 c0       	rjmp	.+0      	; 0x292 <LCD_Init+0x40>
+ 292:	00 00       	nop
+ 294:	08 95       	ret
+
+00000296 <turnRight>:
+	LCD_ClearRow(1);
+}
+
+// ----- Turn Left -----
+void turnRight() {
+	LCD_PrintLine(0, "Turning Right");
+ 296:	6d e4       	ldi	r22, 0x4D	; 77
+ 298:	71 e0       	ldi	r23, 0x01	; 1
+ 29a:	80 e0       	ldi	r24, 0x00	; 0
+ 29c:	0e 94 8c 00 	call	0x118	; 0x118 <LCD_PrintLine>
+	LCD_PrintLine(1, "Speed: 100%");
+ 2a0:	6b e5       	ldi	r22, 0x5B	; 91
+ 2a2:	71 e0       	ldi	r23, 0x01	; 1
+ 2a4:	81 e0       	ldi	r24, 0x01	; 1
+ 2a6:	0e 94 8c 00 	call	0x118	; 0x118 <LCD_PrintLine>
+	servoL_set_angle(0);
+ 2aa:	80 e0       	ldi	r24, 0x00	; 0
+ 2ac:	0e 94 01 02 	call	0x402	; 0x402 <servoL_set_angle>
+	servoR_set_angle(0);
+ 2b0:	80 e0       	ldi	r24, 0x00	; 0
+ 2b2:	0e 94 0c 02 	call	0x418	; 0x418 <servoR_set_angle>
+ 2b6:	2f ef       	ldi	r18, 0xFF	; 255
+ 2b8:	87 ea       	ldi	r24, 0xA7	; 167
+ 2ba:	91 e6       	ldi	r25, 0x61	; 97
+ 2bc:	21 50       	subi	r18, 0x01	; 1
+ 2be:	80 40       	sbci	r24, 0x00	; 0
+ 2c0:	90 40       	sbci	r25, 0x00	; 0
+ 2c2:	e1 f7       	brne	.-8      	; 0x2bc <turnRight+0x26>
+ 2c4:	00 c0       	rjmp	.+0      	; 0x2c6 <turnRight+0x30>
+ 2c6:	00 00       	nop
+	_delay_ms(2000);
+	LCD_ClearRow(0);
+ 2c8:	80 e0       	ldi	r24, 0x00	; 0
+ 2ca:	0e 94 98 00 	call	0x130	; 0x130 <LCD_ClearRow>
+	LCD_ClearRow(1);
+ 2ce:	81 e0       	ldi	r24, 0x01	; 1
+ 2d0:	0e 94 98 00 	call	0x130	; 0x130 <LCD_ClearRow>
+ 2d4:	08 95       	ret
+
+000002d6 <turnLeft>:
+}
+
+// ----- Turn Right -----
+void turnLeft() {
+	LCD_PrintLine(0, "Turning Left");
+ 2d6:	67 e6       	ldi	r22, 0x67	; 103
+ 2d8:	71 e0       	ldi	r23, 0x01	; 1
+ 2da:	80 e0       	ldi	r24, 0x00	; 0
+ 2dc:	0e 94 8c 00 	call	0x118	; 0x118 <LCD_PrintLine>
+	LCD_PrintLine(1, "Speed: 100%");
+ 2e0:	6b e5       	ldi	r22, 0x5B	; 91
+ 2e2:	71 e0       	ldi	r23, 0x01	; 1
+ 2e4:	81 e0       	ldi	r24, 0x01	; 1
+ 2e6:	0e 94 8c 00 	call	0x118	; 0x118 <LCD_PrintLine>
+	servoL_set_angle(180);
+ 2ea:	84 eb       	ldi	r24, 0xB4	; 180
+ 2ec:	0e 94 01 02 	call	0x402	; 0x402 <servoL_set_angle>
+	servoR_set_angle(180);
+ 2f0:	84 eb       	ldi	r24, 0xB4	; 180
+ 2f2:	0e 94 0c 02 	call	0x418	; 0x418 <servoR_set_angle>
+ 2f6:	2f ef       	ldi	r18, 0xFF	; 255
+ 2f8:	87 ea       	ldi	r24, 0xA7	; 167
+ 2fa:	91 e6       	ldi	r25, 0x61	; 97
+ 2fc:	21 50       	subi	r18, 0x01	; 1
+ 2fe:	80 40       	sbci	r24, 0x00	; 0
+ 300:	90 40       	sbci	r25, 0x00	; 0
+ 302:	e1 f7       	brne	.-8      	; 0x2fc <turnLeft+0x26>
+ 304:	00 c0       	rjmp	.+0      	; 0x306 <turnLeft+0x30>
+ 306:	00 00       	nop
+	_delay_ms(2000);
+	LCD_ClearRow(0);
+ 308:	80 e0       	ldi	r24, 0x00	; 0
+ 30a:	0e 94 98 00 	call	0x130	; 0x130 <LCD_ClearRow>
+	LCD_ClearRow(1);
+ 30e:	81 e0       	ldi	r24, 0x01	; 1
+ 310:	0e 94 98 00 	call	0x130	; 0x130 <LCD_ClearRow>
+ 314:	08 95       	ret
+
+00000316 <Timer3_Init>:
+}
+
+// ----- Timer3 Setup for 1s Interrupts -----
+void Timer3_Init(void) {
+	TCCR3A = 0;
+ 316:	10 92 90 00 	sts	0x0090, r1	; 0x800090 <__TEXT_REGION_LENGTH__+0x7f8090>
+	TCCR3B = (1 << CS32); // Prescaler = 256
+ 31a:	84 e0       	ldi	r24, 0x04	; 4
+ 31c:	80 93 91 00 	sts	0x0091, r24	; 0x800091 <__TEXT_REGION_LENGTH__+0x7f8091>
+	TCNT3 = 0;
+ 320:	10 92 95 00 	sts	0x0095, r1	; 0x800095 <__TEXT_REGION_LENGTH__+0x7f8095>
+ 324:	10 92 94 00 	sts	0x0094, r1	; 0x800094 <__TEXT_REGION_LENGTH__+0x7f8094>
+	TIMSK3 |= (1 << TOIE3); // Enable Timer3 overflow interrupt
+ 328:	e1 e7       	ldi	r30, 0x71	; 113
+ 32a:	f0 e0       	ldi	r31, 0x00	; 0
+ 32c:	80 81       	ld	r24, Z
+ 32e:	81 60       	ori	r24, 0x01	; 1
+ 330:	80 83       	st	Z, r24
+ 332:	08 95       	ret
+
+00000334 <__vector_35>:
+}
+
+// ----- ISR: Timer3 Overflow (1s) -----
+ISR(TIMER3_OVF_vect) {
+ 334:	1f 92       	push	r1
+ 336:	0f 92       	push	r0
+ 338:	0f b6       	in	r0, 0x3f	; 63
+ 33a:	0f 92       	push	r0
+ 33c:	11 24       	eor	r1, r1
+ 33e:	2f 93       	push	r18
+ 340:	3f 93       	push	r19
+ 342:	4f 93       	push	r20
+ 344:	5f 93       	push	r21
+ 346:	6f 93       	push	r22
+ 348:	7f 93       	push	r23
+ 34a:	8f 93       	push	r24
+ 34c:	9f 93       	push	r25
+ 34e:	af 93       	push	r26
+ 350:	bf 93       	push	r27
+ 352:	ef 93       	push	r30
+ 354:	ff 93       	push	r31
+	motor_stop();
+ 356:	0e 94 79 00 	call	0xf2	; 0xf2 <motor_stop>
+	TCNT3 = 0; // Reset counter for next 1s
+ 35a:	10 92 95 00 	sts	0x0095, r1	; 0x800095 <__TEXT_REGION_LENGTH__+0x7f8095>
+ 35e:	10 92 94 00 	sts	0x0094, r1	; 0x800094 <__TEXT_REGION_LENGTH__+0x7f8094>
+
+	seconds_counter++;
+ 362:	80 91 75 01 	lds	r24, 0x0175	; 0x800175 <seconds_counter>
+ 366:	8f 5f       	subi	r24, 0xFF	; 255
+ 368:	80 93 75 01 	sts	0x0175, r24	; 0x800175 <seconds_counter>
+	
+	if (seconds_counter >= 5) {
+ 36c:	80 91 75 01 	lds	r24, 0x0175	; 0x800175 <seconds_counter>
+ 370:	85 30       	cpi	r24, 0x05	; 5
+ 372:	80 f0       	brcs	.+32     	; 0x394 <__vector_35+0x60>
+		seconds_counter = 0;
+ 374:	10 92 75 01 	sts	0x0175, r1	; 0x800175 <seconds_counter>
+
+		if (toggle_turn == 0) {
+ 378:	80 91 74 01 	lds	r24, 0x0174	; 0x800174 <__data_end>
+ 37c:	81 11       	cpse	r24, r1
+ 37e:	06 c0       	rjmp	.+12     	; 0x38c <__vector_35+0x58>
+			turnLeft();
+ 380:	0e 94 6b 01 	call	0x2d6	; 0x2d6 <turnLeft>
+			toggle_turn = 1;
+ 384:	81 e0       	ldi	r24, 0x01	; 1
+ 386:	80 93 74 01 	sts	0x0174, r24	; 0x800174 <__data_end>
+ 38a:	04 c0       	rjmp	.+8      	; 0x394 <__vector_35+0x60>
+			} else {
+			turnRight();
+ 38c:	0e 94 4b 01 	call	0x296	; 0x296 <turnRight>
+			toggle_turn = 0;
+ 390:	10 92 74 01 	sts	0x0174, r1	; 0x800174 <__data_end>
+		}
+	}
+}
+ 394:	ff 91       	pop	r31
+ 396:	ef 91       	pop	r30
+ 398:	bf 91       	pop	r27
+ 39a:	af 91       	pop	r26
+ 39c:	9f 91       	pop	r25
+ 39e:	8f 91       	pop	r24
+ 3a0:	7f 91       	pop	r23
+ 3a2:	6f 91       	pop	r22
+ 3a4:	5f 91       	pop	r21
+ 3a6:	4f 91       	pop	r20
+ 3a8:	3f 91       	pop	r19
+ 3aa:	2f 91       	pop	r18
+ 3ac:	0f 90       	pop	r0
+ 3ae:	0f be       	out	0x3f, r0	; 63
+ 3b0:	0f 90       	pop	r0
+ 3b2:	1f 90       	pop	r1
+ 3b4:	18 95       	reti
+
+000003b6 <main>:
+
+int main() {
+	servo_init();
+ 3b6:	0e 94 e7 01 	call	0x3ce	; 0x3ce <servo_init>
+	motor_init();
+ 3ba:	0e 94 7e 00 	call	0xfc	; 0xfc <motor_init>
+	I2C_Init();
+ 3be:	0e 94 a0 00 	call	0x140	; 0x140 <I2C_Init>
+	LCD_Init();
+ 3c2:	0e 94 29 01 	call	0x252	; 0x252 <LCD_Init>
+
+	Timer3_Init();
+ 3c6:	0e 94 8b 01 	call	0x316	; 0x316 <Timer3_Init>
+	sei();
+ 3ca:	78 94       	sei
+ 3cc:	ff cf       	rjmp	.-2      	; 0x3cc <main+0x16>
+
+000003ce <servo_init>:
+#include "servo.h"
+
+// Initialize Timer1 for dual servo control (OC1A = PB1, OC1B = PB2)
+void servo_init(void) {
+	SERVO_DDR |= (1 << SERVO_PINL) | (1 << SERVO_PINR); // Set pins as output
+ 3ce:	84 b1       	in	r24, 0x04	; 4
+ 3d0:	86 60       	ori	r24, 0x06	; 6
+ 3d2:	84 b9       	out	0x04, r24	; 4
+
+	// Fast PWM mode 14: ICR1 is TOP
+	TCCR1A = (1 << COM1A1) | (1 << COM1B1) | (1 << WGM11);
+ 3d4:	82 ea       	ldi	r24, 0xA2	; 162
+ 3d6:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <__TEXT_REGION_LENGTH__+0x7f8080>
+	TCCR1B = (1 << WGM13) | (1 << WGM12) | (1 << CS11); // Prescaler = 8
+ 3da:	8a e1       	ldi	r24, 0x1A	; 26
+ 3dc:	80 93 81 00 	sts	0x0081, r24	; 0x800081 <__TEXT_REGION_LENGTH__+0x7f8081>
+
+	ICR1 = 39999;  // TOP for 20ms period (50 Hz)
+ 3e0:	8f e3       	ldi	r24, 0x3F	; 63
+ 3e2:	9c e9       	ldi	r25, 0x9C	; 156
+ 3e4:	90 93 87 00 	sts	0x0087, r25	; 0x800087 <__TEXT_REGION_LENGTH__+0x7f8087>
+ 3e8:	80 93 86 00 	sts	0x0086, r24	; 0x800086 <__TEXT_REGION_LENGTH__+0x7f8086>
+
+	// Initialize both servos to neutral (1.5ms pulse)
+	OCR1A = 3000; // Left servo
+ 3ec:	88 eb       	ldi	r24, 0xB8	; 184
+ 3ee:	9b e0       	ldi	r25, 0x0B	; 11
+ 3f0:	90 93 89 00 	sts	0x0089, r25	; 0x800089 <__TEXT_REGION_LENGTH__+0x7f8089>
+ 3f4:	80 93 88 00 	sts	0x0088, r24	; 0x800088 <__TEXT_REGION_LENGTH__+0x7f8088>
+	OCR1B = 3000; // Right servo
+ 3f8:	90 93 8b 00 	sts	0x008B, r25	; 0x80008b <__TEXT_REGION_LENGTH__+0x7f808b>
+ 3fc:	80 93 8a 00 	sts	0x008A, r24	; 0x80008a <__TEXT_REGION_LENGTH__+0x7f808a>
+ 400:	08 95       	ret
+
+00000402 <servoL_set_angle>:
+}
+
+// Set angle for left servo (OC1A)
+void servoL_set_angle(uint8_t angle) {
+	OCR1A = 1000 + (angle * 11);  // Map 0–180° to 1ms–2ms pulse
+ 402:	2b e0       	ldi	r18, 0x0B	; 11
+ 404:	82 9f       	mul	r24, r18
+ 406:	c0 01       	movw	r24, r0
+ 408:	11 24       	eor	r1, r1
+ 40a:	88 51       	subi	r24, 0x18	; 24
+ 40c:	9c 4f       	sbci	r25, 0xFC	; 252
+ 40e:	90 93 89 00 	sts	0x0089, r25	; 0x800089 <__TEXT_REGION_LENGTH__+0x7f8089>
+ 412:	80 93 88 00 	sts	0x0088, r24	; 0x800088 <__TEXT_REGION_LENGTH__+0x7f8088>
+ 416:	08 95       	ret
+
+00000418 <servoR_set_angle>:
+}
+
+// Set angle for right servo (OC1B)
+void servoR_set_angle(uint8_t angle) {
+	OCR1B = 1000 + (angle * 11);  // Same mapping
+ 418:	2b e0       	ldi	r18, 0x0B	; 11
+ 41a:	82 9f       	mul	r24, r18
+ 41c:	c0 01       	movw	r24, r0
+ 41e:	11 24       	eor	r1, r1
+ 420:	88 51       	subi	r24, 0x18	; 24
+ 422:	9c 4f       	sbci	r25, 0xFC	; 252
+ 424:	90 93 8b 00 	sts	0x008B, r25	; 0x80008b <__TEXT_REGION_LENGTH__+0x7f808b>
+ 428:	80 93 8a 00 	sts	0x008A, r24	; 0x80008a <__TEXT_REGION_LENGTH__+0x7f808a>
+ 42c:	08 95       	ret
+
+0000042e <_exit>:
+ 42e:	f8 94       	cli
+
+00000430 <__stop_program>:
+ 430:	ff cf       	rjmp	.-2      	; 0x430 <__stop_program>
